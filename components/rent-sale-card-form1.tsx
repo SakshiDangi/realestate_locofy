@@ -49,19 +49,7 @@ const RentSaleCardForm1: NextPage = () => {
               Locations
             </div>
             <Dropdown
-              overlay={
-                <Menu>
-                  {(
-                    [{ value: "New York" }, { value: "Los Angeles" }] as any
-                  ).map((option: any, index: number) => (
-                    <Menu.Item key={index}>
-                      <a onClick={(e) => e.preventDefault()}>
-                        {option.value || ""}
-                      </a>
-                    </Menu.Item>
-                  ))}
-                </Menu>
-              }
+              
               placement="bottomLeft"
               trigger={["hover"]}
             >
